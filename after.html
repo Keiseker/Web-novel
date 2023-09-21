@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="<utf-8">
+    <title>Веб-новелла про Внеучебную деятельность</title>
+    <meta name='viewport' content='width=devide-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="after.css">
+    <link rel="stylesheet" href="adaptAfter.css">
+
+</head>
+
+<body>
+    <!--#  Верхний заголовок с кнопочкой карты #-->
+    <header class="mapbox">
+        <button onclick="home()" class="map"></button>
+        <div class="empty1"></div>
+        <button onclick="backMap()" class="map1"></button>
+    </header>
+    <!--#  Контейнер с персонажем #-->
+    <div class="humanbox">
+        <div class="emptybox"></div>
+        <div id="persboxA" class="imagebox">
+            <img id="persA" class="pers" src="Source/guy.png">
+        </div>
+    </div>
+    <!--#  Контейнер с выбором #-->
+    <div class="choicebox">
+        <button id="choicey" onclick="yes1()" class="choiceyes">Да</button>
+        <div class="emptychoice"></div>
+        <button id="choicen" onclick="no1()" class="choiceno">Нет</button>
+    </div>
+    <!--#  Контейнер с текстом #-->
+    <footer class="textrole">
+        <div class="rolebox">
+            <span class="empt"></span>
+            <div id="roleboxA" class="roleimage">
+                <span id="roleA" class="role">Парень</span>
+            </div>
+        </div>
+
+        <div class="textbox">
+            <button id="backA" onclick="backA()" class="arrowback"></button>
+            <span id="textplace" class="text"></span>
+            <button id="nextA" onclick="nextA()" class="arrownext"></button>
+        </div>
+    </footer>
+
+    <script src="./afterScript.js"></script>
+</body>
+
+</html>

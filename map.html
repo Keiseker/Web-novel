@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="<utf-8">
+    <title>Карта внеучебок</title>
+    <meta name='viewport' content='width=devide-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="mapStyle.css">
+    <link rel="stylesheet" href="adaptMap.css">
+</head>
+
+<body>
+
+
+    <div class="boxofshelves">
+        <div class="head">
+            <button class="cross1"></button>
+            <button class="cross1"></button>
+            <span class="headh2">Выберите внеучебную деятельность, о которой вы хотите узнать</span>
+            <button id="cross" onclick="exit()" class="cross2"></button>
+        </div>
+
+        <!-- Первая полка-->
+        <div class="shelf">
+            <div class="emptybox1"></div>
+            <figure class="boxe">
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Волонтерство.jpg" onclick="Volonteer()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Волонтёры</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Кураторство.jpg" onclick="Kurator()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Кураторы</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Профорганизация.jpg" onclick="Prof()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Профорганизация</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Swipe.jpg" onclick="Swipe()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Swipe</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Иллюзионная мастерская.jpg" onclick="Illusion()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Иллюзионная мастерская</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="boxe">
+
+            </figure>
+            <div class="emptybox1"></div>
+        </div>
+
+        <div class="emptyshelf"></div>
+
+        <!-- Вторая полка-->
+        <div class="shelf">
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/CO.jpg" onclick="SO()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Студ.отряды</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Небо.jpg" onclick="Nebo()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Небо</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/ПолитехМедиа.jpg" onclick="PolythechMedia()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">ПолитехМедиа</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/ОСО.jpg" onclick="OSO()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">ОСО</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/яхтклуб.jpg" onclick="Yaught()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Яхт-клуб</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/FreeDanceFamily.jpg" onclick="FreeDance()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">FreeDanceFamily</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/ВокальныйАнсамбль.jpg" onclick="Vocal()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Вокальный Ансамбль</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+        </div>
+
+
+        <div class="emptyshelf"></div>
+
+        <!-- Третья полка-->
+        <div class="shelf">
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Феникс.jpg" onclick="Fenics()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Феникс</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/полигранник.jpg" onclick="Poligrannik()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Полигранник</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/стно.jpg" onclick="STNO()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">СНО</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/ККО.jpg" onclick="KKO()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">ККО</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/ССК.jpg" onclick="SSK()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">ССК</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/ЛабораторияТанца.jpg" onclick="LabDance()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Лаборатория Танца</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Творческая мастерская.jpg" onclick="Creative()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Творческая мастерская</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+        </div>
+
+        <div class="emptyshelf"></div>
+
+        <!-- Четвёртая полка-->
+        <div class="shelf">
+            <div class="emptybox1"></div>
+            <figure class="boxe">
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/КиноКуб.jpg" onclick="KinoKub()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">КиноКуб</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/ЛигаИнтеллектуалов.jpg" onclick="lIGA()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">ЛигаИнтеллектуалов</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="boxe">
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Полиграфомания.jpg" onclick="Poli()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Полиграфомания</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="box">
+                <img src="лого/Чирлидинг.jpg" onclick="Cheer()" width="100%" height="100%" alt="" />
+                <figcaption сlass="text">Чирлидинг</figcaption>
+            </figure>
+            <div class="emptybox1"></div>
+            <figure class="boxe">
+            </figure>
+            <div class="emptybox1"></div>
+        </div>
+
+        <div class="emptyshelf"></div>
+
+
+
+    </div>
+    <script>
+        //# Переменные пропуска сюжета
+        var skip = localStorage.getItem("skip");
+
+        function Kurator() {
+            localStorage.setItem("activity", 1);
+            window.location = 'after.html';
+        }
+
+        function Poligrannik() {
+            localStorage.setItem("activity", 2);
+            window.location = 'after.html';
+        }
+
+        function Prof() {
+            localStorage.setItem("activity", 3);
+            window.location = 'after.html';
+        }
+
+        function KinoKub() {
+            localStorage.setItem("activity", 4);
+            window.location = 'after.html';
+        }
+
+        function Fenics() {
+            localStorage.setItem("activity", 5);
+            window.location = 'after.html';
+        }
+
+        function Vocal() {
+            localStorage.setItem("activity", 6);
+            window.location = 'after.html';
+        }
+
+        function Illusion() {
+            localStorage.setItem("activity", 7);
+            window.location = 'after.html';
+        }
+
+        function Creative() {
+            localStorage.setItem("activity", 8);
+            window.location = 'after.html';
+        }
+
+        function SO() {
+            localStorage.setItem("activity", 16);
+            window.location = 'after.html';
+        }
+
+        function FreeDance() {
+            localStorage.setItem("activity", 18);
+            window.location = 'after.html';
+        }
+
+        function KKO() {
+            localStorage.setItem("activity", 20);
+            window.location = 'after.html';
+        }
+
+        function LabDance() {
+            localStorage.setItem("activity", 23);
+            window.location = 'after.html';
+        }
+
+        function Nebo() {
+            localStorage.setItem("activity", 10);
+            window.location = 'after.html';
+        }
+
+        function lIGA() {
+            localStorage.setItem("activity", 12);
+            window.location = 'after.html';
+        }
+
+        function Swipe() {
+            localStorage.setItem("activity", 21);
+            window.location = 'after.html';
+        }
+
+        function Volonteer() {
+            localStorage.setItem("activity", 13);
+            window.location = 'after.html';
+        }
+
+        function PolythechMedia() {
+            localStorage.setItem("activity", 14);
+            window.location = 'after.html';
+        }
+
+        function OSO() {
+            localStorage.setItem("activity", 9);
+            window.location = 'after.html';
+        }
+
+        function SSK() {
+            localStorage.setItem("activity", 19);
+            window.location = 'after.html';
+        }
+
+        function STNO() {
+            localStorage.setItem("activity", 15);
+            window.location = 'after.html';
+        }
+
+        function Cheer() {
+            localStorage.setItem("activity", 22);
+            window.location = 'after.html';
+        }
+        function Yaught() {
+            localStorage.setItem("activity", 11);
+            window.location = 'after.html';
+        }
+        function Poli() {
+            localStorage.setItem("activity", 17);
+            window.location = 'after.html';
+        }
+
+        function exit() {
+            if (skip == 1) {
+                window.location = 'start.html';
+            }
+            else {
+                localStorage.setItem("activity", 666);//выход
+                window.location = 'after.html';
+            }
+
+        }
+    </script>
+</body>
+
+</html>

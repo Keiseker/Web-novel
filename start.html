@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="<utf-8">
+    <title>Веб-новелла про Внеучебную деятельность</title>
+    <meta name='viewport' content='width=devide-width, initial-scale=1.0'>
+
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="adapStart.css">
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">
+            <div class="hbox"><span class="htxt">VISUAL NOVEL<br>POLYTECH</span></div>
+        </div>
+        <div class="main">
+            <div class="textbox">
+                <div class="t1"><span class="st1">Визуальная новелла<br>
+                        о внеучебной деятельности<br>Московского Политеха</span></div>
+                <div class="t2"><span class="st2">Для комфортного прохождения рекомендуем использовать<br> полноэкранный
+                        режими (горячая клавиша - F11)</span></div>
+                <div class="btnbox">
+                    <button onclick="start_novel()" class="startt">Начало прохождения</button>
+                    <button onclick="start_map()" class="map">К карте внеучебок</button>
+                </div>
+            </div>
+            <div class="imagebox">
+                <img class="image" src="source/Group21.png" alt="" width="100%" height="100%">
+            </div>
+        </div>
+        <h3 class="h3">Остались вопросы?<br>
+            Задайте их, или выразите<br> своё мнение о нашем проекте</h3>
+        <div class="form">
+            <h3 class="h31">Связаться с нами</h3><br>
+            <form class="fform" action="send.php" method="post">
+                <label for="nametxt" class="txt">Ваше имя</label><br>
+                <input id="nametxt" class="txtbox" type="text" name="name" placeholder="Введите имя" /><br>
+
+                <label for="emailtxt" class="txt">Ваша почта</label><br>
+                <input id="emailtxt" class="txtbox" type="email" name="email" placeholder="Введите почту"
+                    required /><br>
+
+                <label for="texttxt" class="txt">Cообщение</label><br>
+                <textarea id="texttxt" class="txtbox2" type="text" name="text" placeholder="Введите ваше сообщение"
+                    required></textarea><br>
+                <input class="submitbtn" type="submit" name="отправить" />
+            </form>
+        </div>
+
+    </div>
+    <script>
+        /* # Функция в начало*/
+        function start_map() {
+            localStorage.setItem("skip", 1);
+            window.location = 'map.html';
+        }
+
+        //# Функция в начало 
+        function start_novel() {
+            localStorage.setItem("skip", 0);
+            window.location = 'before.html';
+        }
+    </script>
+</body>
+
+</html>

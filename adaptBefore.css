@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@media screen and (max-width: 1000px){
+    .choiceyes{
+        border: 1px solid transparent;
+        color: #FFFFFF;
+        font-size: 18px;
+        display: table;
+        margin: 0 auto;
+        width: 30%;
+        height: 30%;
+        background: rgba(12, 16, 47, 0.8);
+        border-radius: 90px;
+        visibility:hidden;
+    }
+    .pers{
+        width: 120%;
+        height: 100%;
+    }
+    .choiceno{
+        border: 1px solid transparent;
+        color: #FFFFFF;
+        font-size: 18px;
+        left:0px;
+        display: table;
+        margin: 0 auto;
+        width: 30%;
+        height: 30%;
+        background: rgba(12, 16, 47, 0.8);
+        border-radius: 90px;
+        visibility:hidden;
+    }
+    .map{
+        width: 55px;
+        height: 55px;
+        background: url(source/homeicon.png);
+        background-size: 100% 100%;
+        border: transparent;
+        outline: none;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    .role{
+        width: 92%;
+        height: 100%;
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        padding: 0 10px 0 10px;
+        color: #030944;
+        font-weight: 600;
+        text-align: left;
+        
+    }
+    
+    
+    .text{
+        width: 92%;
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 15px;
+    
+    }
+}
+
+@media screen and (min-width: 1200px)
+{     
+    .choiceyes{
+        border: 1px solid transparent;
+        color: #FFFFFF;
+        font-size: 22px;
+        display: table;
+        margin: 0 auto;
+        width: 30%;
+        height: 30%;
+        background: rgba(12, 16, 47, 0.8);
+        border-radius: 90px;
+        visibility:hidden;
+    }
+    .choiceno{
+        border: 1px solid transparent;
+        color: #FFFFFF;
+        font-size: 22px;
+        left:0px;
+        display: table;
+        margin: 0 auto;
+        width: 30%;
+        height: 30%;
+        background: rgba(12, 16, 47, 0.8);
+        border-radius: 90px;
+        visibility:hidden;
+    }
+    .map{
+        width: 60px;
+        height: 60px;
+        background: url(source/homeicon.png);
+        background-size: 100% 100%;
+        border: transparent;
+        outline: none;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    .role{
+        width: 92%;
+        height: 100%;
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        padding: 0 10px 0 10px;
+        color: #030944;
+        font-weight: 600;
+        text-align: left;
+        
+    }
+    
+    
+    .text{
+        width: 92%;
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 15px;
+    
+    }
+}
+@media screen and (min-width: 1700px)
+{     
+
+    .choiceyes{
+        border: 1px solid transparent;
+        color: #FFFFFF;
+        font-size: 28px;
+        display: table;
+        margin: 0 auto;
+        width: 30%;
+        height: 30%;
+        background: rgba(12, 16, 47, 0.8);
+        border-radius: 90px;
+        visibility:hidden;
+    }
+    .choiceno{
+        border: 1px solid transparent;
+        color: #FFFFFF;
+        font-size: 28px;
+        left:0px;
+        display: table;
+        margin: 0 auto;
+        width: 30%;
+        height: 30%;
+        background: rgba(12, 16, 47, 0.8);
+        border-radius: 90px;
+        visibility:hidden;
+    }
+    .pers{
+        width: 145%;
+        height: 100%;
+    }
+    .role{
+        width: 92%;
+        height: 100%;
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        padding: 0 10px 0 10px;
+        color: #030944;
+        font-weight: 600;
+        text-align: left;
+        
+    }
+    .map{
+        width: 90px;
+        height: 90px;
+        background: url(source/homeicon.png);
+        background-size: 100% 100%;
+        color: #030944;
+        border: transparent;
+        outline: none;
+    }
+
+
+    
+    .text{
+        width: 92%;
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #FFFFFF;
+        text-align: left;
+        padding: 15px;
+    
+    }
+}

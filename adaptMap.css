@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@media screen and (max-width: 1000px){
+
+    .head{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        margin-bottom: 3%;
+        margin-top: 10%;
+    }
+
+    figcaption{
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        color: #FFFFFF;
+        text-align: center;
+    
+        
+    }
+    .shelf{
+        /*background-color: aqua;*/
+        display: flex;
+        width: 100%;
+        height: 7%;
+    
+    }
+}
+@media screen and (min-width: 1400px)
+{     
+    figcaption{
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+    
+    }
+}
+@media screen and (min-width: 1700px)
+{     
+    figcaption{
+    
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    
+    }
+
+    .headh2{
+        text-align: center;
+        width: 76%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        color: #FFFFFF;
+        
+    }
+    .cross1{
+        width: 5%;
+        max-height: 100%;
+        visibility: hidden;
+        border: transparent;
+        outline: none;
+    }
+    .cross2{
+        width: 6.25%;
+        max-height: 100%;
+        background: url(Source/cross.png);
+        background-size: 100% 100%;
+        border: transparent;
+        outline: none;
+    }
+}

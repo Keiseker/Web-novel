@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="<utf-8">
+    <title>Веб-новелла про Внеучебную деятельность</title>
+    <meta name='viewport' content='width=devide-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="before.css">
+    <link rel="stylesheet" href="adaptBefore.css">
+</head>
+
+<body>
+    <!--#  Верхний заголовок с кнопочкой карты #-->
+    <header class="mapbox">
+        <button onclick="home()" class="map"></button>
+    </header>
+    <!--#  Контейнер с персонажем #-->
+    <div class="humanbox">
+        <div class="emptybox"></div>
+        <div id="persbox" class="imagebox">
+            <img id="pers" class="pers" src="Source/шаблон персонажа.png">
+        </div>
+    </div>
+    <!--#  Контейнер с выбором #-->
+    <div class="choicebox">
+        <button id="choicey" onclick="yes1()" class="choiceyes">Да</button>
+        <div class="emptychoice"></div>
+        <button id="choicen" onclick="no1()" class="choiceno">Нет</button>
+    </div>
+    <!--#  Контейнер с текстом #-->
+    <footer class="textrole">
+        <div class="rolebox">
+            <span class="empt"></span>
+            <div id="rolebox" class="roleimage">
+                <span id="role" class="role">Куратор</span>
+            </div>
+        </div>
+
+        <div class="textbox">
+            <button id="back" onclick="back()" class="arrowback"></button>
+            <span id="replace" class="text">Вот уже несколько часов несколько десятков людей пьют самые разные напитки и
+                обсуждают самые разные темы.</span>
+            <button id="next" onclick="next()" class="arrownext"></button>
+        </div>
+    </footer>
+
+    <script src="./beforeScript.js"></script>
+</body>
+
+</html>
